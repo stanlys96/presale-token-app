@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-image: linear-gradient(to right, #984d38, #181e41);
+}
+
+.the-container {
+  background-image: linear-gradient(to right, #984d38, #181e41);
+}
+
+.stakeBtn,
+.withdrawBtn,
+.selectWalletBtn,
+.depositEthBtn,
+.withdrawEthBtn,
+.rewardInfoBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.5s all;
+}
+
+.withdrawBtn:hover,
+.selectWalletBtn:hover,
+.depositEthBtn:hover {
+  background-color: #0e1f8c;
+  border: 2px solid #0e1f8c;
+}
+
+.selectWalletBtn {
+  background-color: #5868ce;
+  color: #cad9ff;
+  border: 2px solid #5868ce;
+  padding: 5px 15px;
+}
+
+.metamaskIconContainer {
+  flex: 1;
+  background-color: #6a84db;
+  padding: 0 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accountContainer {
+  flex: 1;
+  background-color: #f6f8ff;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #aaacc4;
+  border-radius: 5px;
+}
